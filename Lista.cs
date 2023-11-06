@@ -59,6 +59,20 @@ namespace ListaDesdeCero
                     //QUE TE REGRESE EL NUMERO Y QUE TE LO SUMAN
                     return ++contador;
                 }
+                else
+                {
+                    
+                    //SE TIENE QUE CREAR UN NODO ACTUAL QUE FUNCIONA COMO LA VARIABLE TEMPORAL DE LOS ORDENAMIENTOS
+                    //TIENE QUE SER NODO ACTUAL, Y ESE QUE TENEMOS QUE USAR PARA NO PERDER EL PRIMERO Y REPETIR EL CODIGO 
+                    Nodo actual= primero;
+
+                    while (actual.Siguiente != null)
+                    {
+                        contador++;
+                        actual = actual.Siguiente;
+                    }
+                    return contador+1;
+                }
 
 
 
