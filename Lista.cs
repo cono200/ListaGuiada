@@ -157,8 +157,9 @@ namespace ListaDesdeCero
 
         }
 
-        public void PosicionLista(int PosicionNumero)
+        public void PosicionLista(int buscarNumero)
         {
+            int contador = 0;
             bool encontrado= false;
             //OTRA VEZ CHECAR SI LA LISTA TIENE ELEMENTOS
             if (ListaVacia())
@@ -168,14 +169,27 @@ namespace ListaDesdeCero
             else
             {
                 Nodo actual= primero;
-                
-                while(actual != null)
+
+                while (actual != null)
                 {
-                    
+                    if (actual.Datos == buscarNumero)
+                    {
+                        encontrado = true;
+                        break;
+                    }
+                    else
+                    {
+
+                        //PARA QUE SE RECORRA AL SIGUIENTE POSICION
+                        actual = actual.Siguiente;
+                        contador++;
+                    }
 
 
 
                 }
+
+                Console.WriteLine(contador);
 
 
 
