@@ -6,7 +6,7 @@
         {
             Lista lista1 = new Lista();
 
-
+            lista1.Imprimir();
 
         }
     }
