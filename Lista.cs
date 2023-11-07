@@ -45,6 +45,7 @@ namespace ListaDesdeCero
             //SI ESTA VACIA SE RETORNA CONTADOR QUE VALE 0 AL PRINCIPIO
             if (ListaVacia())
             {
+                
                 return contador;
             }
 
@@ -77,6 +78,20 @@ namespace ListaDesdeCero
 
 
             }
+        }
+
+
+        public void Imprimir()
+        {
+            Nodo actual = primero;
+
+            if (actual == null)
+            {
+                Console.WriteLine("La lista esta vacia");
+            }
+
+
+           
         }
 
 
